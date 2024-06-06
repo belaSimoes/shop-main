@@ -1,13 +1,8 @@
-import React from 'react';
-import styles from './header.module.css';
+import styles from "./header.module.css";
+import Image from "next/image";
 
-export default function Header () {
-    return (
-      <header className={styles.header}>
-        <div className={styles.logo}></div>
-        <div> <img src='sacola.png'></img> </div>
-        <button className={styles.adicionarBotao}>adicionar produto</button>
-        <p className={styles.marketing}>compre</p>
-      </header>
-    );
-  }
+export default function Header(){
+    <header className={styles.cabecalho}></header>
+    return(
+    <Image height={80} width={80} src={""}/>
+    )};
