@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #ffe0e0;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .navbar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    margin: 0 1rem;
+  }
+  
+  .actions {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .actions button {
+    padding: 0.9rem 1rem;
+    border: none;
+    background-color: #700f27;
+    color: rgb(245, 207, 207);
+    font-size: 1rem;
+  }
+  

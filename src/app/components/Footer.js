@@ -1,5 +1,4 @@
 import styles from "./footer.module.css";
-import Image from "next/image"
 
 export default function Footer(){
 
@@ -7,24 +6,24 @@ export default function Footer(){
         <footer className={styles.rodape}>   
         <ul>
             <li>
-                <a href="">
-                <p></p>
+                <a href="https://instagram.com">
+                <p>Instagram</p>
                 </a>
             </li>
             <li>
-                <a href="">
-                <p></p>
+                <a href="https://facebook.com">
+                <p>Facebook</p>
                 </a>
             </li>
             <li>
-                <a href="">
-                <p></p>
+                <a href="https://twitter.com">
+                <p>Twitter</p>
                 </a>
             </li>
             <li>
-                <a href="">
-                     <p></p>
-                     </a>
+                <a href="https://tiktok.com">
+                <p>Tik Tok</p>
+                </a>
             </li>
         </ul>
         </footer>
