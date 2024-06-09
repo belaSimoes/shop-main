@@ -10,13 +10,12 @@ export default function Header() {
         <h2>Para garotinhas!</h2>
       </div>
       <nav className={styles.navbar}>
-      
       </nav>
-      <div className={styles.actions}>
+      
+      <div className={styles.botaoCereja}>
         <button>Carrinho</button>
         <button>Adicionar Produto</button>
       </div>
-      
     </header>
   );
 }

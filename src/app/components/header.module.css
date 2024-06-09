@@ -27,14 +27,14 @@
     margin: 0 1rem;
   }
   
-  .actions {
+  .botaoCereja {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
   }
   
-  .actions button {
+  .botaoCereja button {
     padding: 0.9rem 1rem;
     border: none;
     background-color: #700f27;

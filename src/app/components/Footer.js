@@ -26,5 +26,6 @@ export default function Footer(){
                 </a>
             </li>
         </ul>
+        <p>© 2007 liz e bela</p>
         </footer>
     )};
