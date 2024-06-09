@@ -11,9 +11,9 @@ export default function Header() {
       </div>
       <nav className={styles.navbar}>
       </nav>
-      
+
       <div className={styles.botaoCereja}>
-        <button>Carrinho</button>
+        <button>🛒</button>
         <button>Adicionar Produto</button>
       </div>
     </header>
