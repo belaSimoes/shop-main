@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import styles from "./main.module.css";
+import Spinner from '../components/Spinner'; 
 
 export default  function Main() {
 
@@ -39,6 +40,12 @@ export default  function Main() {
       setProduct(listaOrdem);
     }
     
+    if( listProduct[0] == null) {
+      return (
+      <Spinner/>
+      );
+    }
+
   return (
     <>
     <div className={styles.filters}>
