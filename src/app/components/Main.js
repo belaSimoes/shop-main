@@ -48,7 +48,7 @@ export default  function Main() {
       setTextSearch(text);
 
       if(text.trim() == "") {
-        setComplete(listComplete);
+           setProduct(listComplete);
         return
       }
       const newList = listProduct.filter((product) =>
