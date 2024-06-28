@@ -6,12 +6,16 @@ import Spinner from '../components/Spinner';
 export default  function Main() {
 
   const [listProduct, setProduct] = useState ([]);
+  const [listComplete, setComplete] = useState ([]);
+  const [textSearch, setTextSearch] = useState ("");
 
   useEffect( ()=> { 
     const getProduct = async() => {
       const response = await fetch("https://fakestoreapi.com/products");
       const produtos = await response.json();
       setProduct(produtos);
+      setComplete(produtos);
+
     }
     getProduct();
   },[]);
@@ -39,8 +43,21 @@ export default  function Main() {
       listaOrdem = listaOrdem.reverse();
       setProduct(listaOrdem);
     }
+
+    const search = (text) => {
+      setTextSearch(text);
+
+      if(text.trim() == "") {
+        setComplete(listComplete);
+        return
+      }
+      const newList = listProduct.filter((product) =>
+        product.title.toUpperCase().trim().includes(textSearch.toUpperCase())
+      );
+      setProduct(newList);
+    }
     
-    if( listProduct[0] == null) {
+    if( listComplete[0] == null) {
       return (
       <Spinner/>
       );
@@ -50,6 +67,7 @@ export default  function Main() {
     <>
     <div className={styles.filters}>
       <div>
+        <input type="text" value={textSearch} placeholder="Pesquise um produto" onChange={(event) => search(event.target.value)}/>
         <button onClick={ orderAz }>Az</button>
         <button onClick={ orderZa }>Za</button>
         <button onClick={ orderCrescente }>Ordem Crescente</button>
